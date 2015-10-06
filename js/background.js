@@ -12,3 +12,5 @@ Trello.authorize({
 });
 
 console.log(Trello.token());
+
+$('#TrelloLogin').click(console.log('click'));

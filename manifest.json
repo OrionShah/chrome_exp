@@ -19,15 +19,16 @@
     "chrome_url_overrides": {
         "newtab": "tab.html"
     },
-    "content_scripts": [
-        {
-            "matches" : ["http://*/*", "https://*/*"],
-            "js": ["js/content.js"]
-        }
-    ],
+    // "content_scripts": [
+    //     {
+    //         "matches" : ["http://*/*", "https://*/*"],
+    //         "js": ["js/content.js"]
+    //     }
+    // ],
     // "background_page": ...,
     // "devtools_page": "devtools.html",
     "content_security_policy": "script-src 'self' https://api.trello.com/; object-src 'self'",
+    "web_accessible_resources": ["tab.html"],
     "permissions": [ "management", "history", "chrome://favicon/",
         "bookmarks", "tabs", "http://*/*", "https://*/*", "contextMenus",
         "notifications", "topSites", "unlimitedStorage"]
